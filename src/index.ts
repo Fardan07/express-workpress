@@ -21,6 +21,24 @@ app.get("/", (_req, res) => {
   res.json({ message: "Express + D1 CRUD API", week: 6 });
 });
 
+// Endpoint tugas Minggu 5
+app.get("/api/status", (_req, res) => {
+  res.json({
+    status: "ok",
+    subject: "PaaS",
+    week: 5,
+    platform: "Cloudflare Workers"
+  });
+});
+
+app.get("/api/info", (_req, res) => {
+  res.json({
+    framework: "Express",
+    runtime: "Cloudflare Workers",
+    course: "Platform as a Service"
+  });
+});
+
 // READ ALL
 app.get("/api/students", async (_req, res) => {
   try {
