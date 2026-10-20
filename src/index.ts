@@ -39,6 +39,13 @@ app.get("/api/info", (_req, res) => {
   });
 });
 
+app.get("/api/log-test", (req, res) => {
+  console.log("Endpoint /api/log-test dipanggil");
+  res.json({
+    logged: true
+  });
+});
+
 // READ ALL
 app.get("/api/students", async (_req, res) => {
   try {
