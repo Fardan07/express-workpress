@@ -10,5 +10,9 @@
       "database_name": "paas-students-db",
       "database_id": "982428ae-0ae9-44f1-b98f-f9bd0e480407"
     }
-  ]
+  ], 
+  "assets": {
+    "directory": "./public",
+    "run_worker_first": ["/api/*"]
+  }
 }
